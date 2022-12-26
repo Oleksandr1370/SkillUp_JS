@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-1 Home Work task-4</title>
+</head>
+<body>
+    <script type="module">
+    const credits=23580;
+    const pricePerDroid=3000;
+    console.log(credits, pricePerDroid)
+    let message;
+    let numeroSity = prompt("Введить кількість дроїдів:");
+    let numeroSityN = Number(numeroSity)
+    let totalPrice = pricePerDroid * (numeroSityN);
+    console.log(message, numeroSity, numeroSityN, totalPrice)   
+    if (numeroSity == null) {
+            message = "Скасоване користувачем!";}
+        else if (numeroSityN > 0 && totalPrice < credits) {
+            message = "Ви купили"+String.fromCodePoint(32)+(numeroSity)+String.fromCodePoint(32)+"дроїда"+ String.fromCodePoint(44)+
+            String.fromCodePoint(32)+"на рахунку залишилося"+String.fromCodePoint(32)+
+            (credits-totalPrice)+String.fromCodePoint(32)+"кредитів";}
+        else if (totalPrice > credits){
+           message = "Недостатньо коштів на рахунку!";}
+     alert(message)
+    </script>           
+</body>
+</html>

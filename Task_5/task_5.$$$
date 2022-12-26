@@ -1,0 +1,75 @@
+let country = prompt("Enter Country");
+let credits;
+let availability = 1;
+
+switch (country.toUpperCase()) {
+  case "CHINA":
+    credits = 100;
+    break;
+  case "CHILE":
+    credits = 250;
+    break;
+  case "AUSTRALIA":
+    credits = 170;
+    break;
+  case "INDIA":
+    credits = 80;
+    break;
+  case "JAMAICA":
+    credits = 120;
+    break;
+  default:
+    console.log("Delivery isn't available in your country!");
+    availability = 0;
+    break;
+}
+
+if (availability) {
+  country = country.charAt(0).toUpperCase() + country.slice(1).toLowerCase();
+  console.log(`Delivery in ${country} will cost ${credits} of credits`);
+}
+{/* <script type="module">
+const nameInput = document.querySelector("input");
+
+nameInput.addEventListener("input", () => {
+  nameInput.setCustomValidity("");
+  nameInput.checkValidity();
+});
+
+nameInput.addEventListener("invalid", () => {
+  if (nameInput.value === "") {
+    nameInput.setCustomValidity("Enter your username!");
+  } else {
+    nameInput.setCustomValidity(
+      "Usernames can only contain upper and lowercase letters. Try again!"
+    );
+  }
+});
+</script> */}
+function selectCountry(){
+  let x = document.getElementById("optionCountry");  
+  let value = x.value;
+  let disp = document.getElementById("result");
+  disp.innerHTML=value;  
+  } 
+  // <!-- Відправити товар у:
+  //       <select id="optionCountry" onchange="test()">
+  //         <option value="1">Китай - 100 кредитів</option> 
+  //         <option value="2">Чилі - 250 кредитів</option>
+  //         <option value="3">Австралія - 170 кредитів</option>
+  //         <option value="4">Індія - 80 кредитів</option>
+  //         <option value="5">Ямайка - 120 кредитів</option>
+  //         <option value="6">росія - </option>
+  //         <option value="7">США - 200 кредитів</option>
+  //       </select>
+  //       <input type="submit" value="press me"> -->
+  //       <!-- <script type="module"> -->
+  //         <!-- console.log(nameContry)  -->
+  //       <!-- </script>    -->
+  //      <!-- <hr> -->
+  //       <!-- </script>
+  // <!-- <div> 
+  //       <h1>Доставка вантажів у любу точку Світу</h1>
+  //       <h2>На цьому сайті Ви можете оформити доставку товару в країну</h2>
+  //       <hr>
+  //      </div> -->    

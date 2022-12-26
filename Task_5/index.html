@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson-1 Home Work task-5</title>
+</head>
+<body>
+  <div> 
+  <h1>Доставка вантажів у любу точку Світу</h1>
+  <h2>На цьому сайті Ви можете оформити доставку товару в країну</h2>
+  <hr>
+  </div>
+  Відправити товар у:
+   <!-- <select id="optionCountry" onchange="test()"> -->
+     <p>Китай</p>
+     <p>Чилі</p>
+     <p>Австралія</p>
+     <p>Індія</p>
+     <p>Ямайка</p>
+     <p>росія</p>
+     <p>США</p>
+    <!-- </select> -->
+   </div> 
+</div>
+  <script type="module">
+    let nameSender = prompt("Введить Ваше і'мя:");
+    let toCountry = prompt("Enter Country");
+    let uPnameCountry=toCountry.toUpperCase(); 
+    let credits = 0;
+    let message="У вашу країну доставка";
+    let opTion = 1;
+      console.log(nameSender, toCountry, uPnameCountry, credits); 
+    switch (uPnameCountry){
+      case 'КИТАЙ':
+        credits = 100;
+        message=message+" "+credits+" "+"кредитів";
+    break;
+      case'ЧИЛИ':
+        credits = 250;
+        message=message+" "+credits+" "+"кредитів";
+    break;
+      case'АВСТРАЛИЯ':
+        credits = 170;
+        message=message+" "+credits+" "+"кредитів";
+    break;
+      case'ІНДІЯ':
+        credits = 80;
+        message=message+" "+credits+" "+"кредитів";
+    break;
+      case 'США':
+        credits = 120;
+        message=message+" "+credits+" "+"кредитів";
+    break;
+    default:
+    message=message+" "+"недоступна !";
+        opTion = 0;
+    break;
+          }
+    alert(message)
+  </script>      
+</body>
+</html>

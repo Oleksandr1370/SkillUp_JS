@@ -1,0 +1,83 @@
+/* <style type="text/css"> */
+  * { margin: 0; padding: 5px; }
+  p { padding: 3px; }
+  /* P { justify} */
+  #left { position: absolute; left: 20px; top: 0; width: 50%; }
+  #right { position: absolute; right: 0; top: 0; width: 45%;
+  padding: 3px; } 
+  /* </style> */
+  .left{position: absolute; left: 20px; top: 0; width: 50%; 
+  }
+  .right{position: absolute; right: 0; top: 0; width: 45%;
+    padding: 3px;
+  }
+  .firstword{
+    color: red;
+  }
+  .parag1{
+    border-right: 3px dashed red;
+     font-style: normal;
+     font-size: 25px;
+  }
+  .parag2{
+    text-decoration: underline;
+    border-style:none none none solid;
+    background-color: rgb(29, 26, 26);
+    padding: 50px;
+    font-style: italic;
+    font-size: 27px;
+    color: white
+   }
+  .parag3{
+    border-right: 3px dashed red;
+     font-style: normal;
+     font-size: 25px;
+  }
+  .parag4{
+    text-decoration: underline;
+    border-style:none none none solid;
+    background-color: rgb(29, 26, 26);
+    padding: 50px;
+    font-style: italic;
+    font-size: 27px;
+    color: white  
+  }
+  .parag5{
+    border-right: 3px dashed red;
+    font-style: normal;
+    font-size: 25px;
+  }
+  .parag6{
+    text-decoration: underline;
+    border-style:none none none solid;
+    background-color: rgb(29, 26, 26);
+    padding: 50px;
+    font-style: italic;
+    font-size: 27px;
+    color: white
+  }
+  .parag7{
+    border: 3px solid rgb(97, 20, 241);
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    /* font-style: bold; */
+    font-weight: 700;
+    font-size: 35px; 
+  }
+  .parag8{
+    border-right: 3px dashed red;
+     font-style: normal;
+     font-size: 25px;
+  }
+  .parag9{
+    border-right: 3px dashed red;
+    font-style: normal;
+    font-size: 25px;  
+  }
+  .parag10{
+    border-right: 3px dashed red;
+     font-style: normal;
+     font-size: 25px;
+  }

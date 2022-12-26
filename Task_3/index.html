@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-1 Home Work task-3</title>
+    </head>
+<body>
+    <script type="module">
+    const ADMIN_PASSWORD = "qwerty";
+    let message;
+    let usePW="AAAAA"
+    for(usePW !== null;;) {
+    let usePW = prompt("Введить пароль:");
+    // console.log(usePW)
+        if (usePW == null) {
+         message = "Скасоване користувачем!";
+         break
+        } else if (usePW == ADMIN_PASSWORD) {
+         message = "Ласкаво просимо!";
+         break
+        } else if (usePW !==ADMIN_PASSWORD){
+            alert('Борис ти не прав!')}
+        }
+    alert(message);
+    </script>   
+</body>
+</html>
